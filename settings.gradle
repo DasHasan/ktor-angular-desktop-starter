@@ -1,0 +1,3 @@
+rootProject.name = 'ktor-angular-desktop-starter'
+include("frontend")
+
