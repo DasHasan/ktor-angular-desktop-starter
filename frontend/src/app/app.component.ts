@@ -8,7 +8,7 @@ import {ApiService} from "./api.service";
 })
 export class AppComponent {
 
-  public system$ = this.api.getSystem();
+  public system$ = this.api.system$;
 
   constructor(private api: ApiService) {
   }

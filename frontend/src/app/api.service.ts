@@ -16,10 +16,9 @@ export interface System {
 })
 export class ApiService {
 
+  public system$: Observable<System> = this.http.get<System>(`${environment.host}/api/system`)
+
   constructor(private http: HttpClient) {
   }
 
-  getSystem(): Observable<System> {
-    return this.http.get<System>(`${environment.host}/api/system`)
-  }
 }
